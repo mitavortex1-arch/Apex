@@ -1,0 +1,374 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Rajdhani', sans-serif;
+  color: #e9f5ff;
+  background: #05080f;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% 0%, #10233c 0%, transparent 48%),
+    #05080f;
+}
+
+.apex {
+  max-width: 1450px;
+  margin: auto;
+  padding: 35px 6%;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1b3349;
+  padding-bottom: 22px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.symbol {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  font-family: Orbitron;
+  font-size: 28px;
+  font-weight: 900;
+  color: #07111b;
+  background: #36d8ff;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  padding-top: 10px;
+}
+
+.brand h2 {
+  font-family: Orbitron;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.brand h2 span {
+  color: #36d8ff;
+}
+
+.brand small,
+.eyebrow,
+.section-heading small,
+.hero-meta,
+.metric small,
+footer small {
+  color: #718ba6;
+  letter-spacing: 2px;
+}
+
+.brand small {
+  font-size: 10px;
+}
+
+.status {
+  color: #55f3bc;
+  font-family: Orbitron;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.pulse,
+.node-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #55f3bc;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #55f3bc;
+  margin-right: 8px;
+}
+
+.hero {
+  padding: 100px 0 80px;
+  text-align: center;
+  position: relative;
+}
+
+.eyebrow {
+  font-size: 11px;
+  color: #36d8ff;
+}
+
+.hero h1 {
+  font-family: Orbitron;
+  font-size: clamp(85px, 18vw, 190px);
+  letter-spacing: 12px;
+  line-height: 1;
+  margin: 28px 0 15px;
+  text-shadow: 0 0 45px #168cc866;
+}
+
+.hero h1 span,
+.footer-logo span {
+  color: #36d8ff;
+}
+
+.hero h2 {
+  font-family: Orbitron;
+  font-size: clamp(13px, 2vw, 20px);
+  letter-spacing: 3px;
+}
+
+.hero p {
+  color: #8ba5bc;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.hero-line {
+  width: 180px;
+  height: 2px;
+  background: #36d8ff;
+  margin: 40px auto;
+  box-shadow: 0 0 20px #36d8ff;
+}
+
+.hero-meta {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  font-size: 10px;
+}
+
+.section {
+  margin: 65px 0;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 25px;
+  gap: 20px;
+}
+
+.section-heading small {
+  font-size: 10px;
+  color: #36d8ff;
+}
+
+.section-heading h2 {
+  font-family: Orbitron;
+  font-size: 22px;
+  letter-spacing: 3px;
+  margin: 10px 0 0;
+}
+
+.live {
+  color: #55f3bc;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.metric,
+.capability,
+.protocol-step {
+  background: linear-gradient(145deg, #101c2b, #080f19);
+  border: 1px solid #1d354d;
+  padding: 25px;
+  transition: .3s;
+}
+
+.metric:hover,
+.capability:hover,
+.protocol-step:hover {
+  border-color: #36d8ff;
+  transform: translateY(-3px);
+}
+
+.metric small {
+  font-size: 10px;
+}
+
+.metric-value {
+  font-family: Orbitron;
+  font-size: 34px;
+  color: #36d8ff;
+  margin: 25px 0;
+}
+
+.metric-value span {
+  font-size: 15px;
+}
+
+.bar {
+  height: 4px;
+  background: #1b2b3c;
+  overflow: hidden;
+}
+
+.bar div {
+  height: 100%;
+  background: linear-gradient(90deg, #087bb7, #36d8ff);
+  box-shadow: 0 0 12px #36d8ff;
+}
+
+.metric .metric-foot {
+  display: block;
+  margin-top: 17px;
+  font-size: 9px;
+}
+
+.capabilities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.capability {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.number {
+  font-family: Orbitron;
+  color: #36d8ff;
+  font-size: 22px;
+}
+
+.capability h3 {
+  font-family: Orbitron;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.capability p {
+  color: #829bb2;
+  font-size: 15px;
+}
+
+.arrow {
+  margin-left: auto;
+  color: #36d8ff;
+}
+
+.network {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.node {
+  background: #0e1c2b;
+  border: 1px solid #21415c;
+  padding: 18px 25px;
+  font-family: Orbitron;
+  font-size: 11px;
+  letter-spacing: 1px;
+  flex: 1 1 130px;
+}
+
+.node-dot {
+  background: #36d8ff;
+  box-shadow: 0 0 10px #36d8ff;
+  width: 6px;
+  height: 6px;
+}
+
+.protocol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.protocol-step {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.protocol-step > span:first-child {
+  font-family: Orbitron;
+  color: #36d8ff;
+}
+
+.protocol-step p {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.check {
+  color: #55f3bc;
+  margin-left: auto;
+}
+
+footer {
+  border-top: 1px solid #1b3349;
+  text-align: center;
+  padding: 45px 0 20px;
+}
+
+.footer-logo {
+  font-family: Orbitron;
+  font-size: 42px;
+  font-weight: 900;
+}
+
+footer p {
+  letter-spacing: 3px;
+  color: #829bb2;
+}
+
+footer small {
+  font-size: 9px;
+}
+
+@media (max-width: 800px) {
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-meta {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  .apex {
+    padding: 20px;
+  }
+
+  .capabilities,
+  .protocol {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2 {
+    font-size: 17px;
+  }
+
+  .metric {
+    padding: 16px;
+  }
+
+  .metric-value {
+    font-size: 26px;
+  }
+}
+
